@@ -6561,7 +6561,7 @@ inline int convert_parsed_to_buffer(const float_base10<T> &result, char *buffer,
 
     exp += result.significand_digit_count;
     exp--;
-    char exponent_buffer[4] = {};
+    char exponent_buffer[5] = {};
     int exponent_digit_count = count_chars(exp);
     if (exp < 0)
     {
